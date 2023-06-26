@@ -1,0 +1,16 @@
+class Solution {
+    public void moveZeroes(int[] nums) {
+        int i=0;
+        int high = nums.length;
+        for(var k : nums){
+            if(k !=0){
+                nums[i]=k;
+                i++;
+            }
+        }
+        while(i<high){
+            nums[i]=0;
+            i++;
+        }
+    }
+}
